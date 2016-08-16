@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Strings</title>
-  </head>
-  <body>
-    <input type="text" name="" id="testInput" pattern="[A-Za-z]">
-    <button type="button" name="button" id="testbtn">Test</button>
+</head>
+
+<body>
+    <form id="myForm" onsubmit="event.preventDefault(); outputValues();">
+        <input type="text" name="theForm" id="testinput" pattern="[A-Za-z]+" title="shit failed">
+        <button type="submit" id="testbtn">Test</button>
+    </form>
     <div id="results"></div>
+
     <script src="strings.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
